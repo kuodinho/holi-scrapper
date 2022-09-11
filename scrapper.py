@@ -29,4 +29,9 @@ if respo.status_code != 200:
     print("CRITICAL ERROR")
 else:
     offer_print(respo)
+
+def test():
+    response = requests.get("https://www.itaka.pl/last-minute/")
+    assert response.status_code == 200
+
    
